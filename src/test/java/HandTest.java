@@ -27,4 +27,19 @@ public class HandTest {
         assertEquals(1, hand.getHand());
     }
 
+    @Test
+    public void handHasValue(){
+    assertEquals(0, hand.score());
+    }
+
+    @Test
+    public void handHasRealValue(){
+        deck.newDeck();
+        Card card = deck.removeCard();
+        hand.addToHand(card);
+        card = deck.removeCard();
+        hand.addToHand(card);
+        System.out.println(hand.score());
+    }
+
 }
