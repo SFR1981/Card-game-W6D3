@@ -32,4 +32,29 @@ public class Game {
 
     }
 
-}
+
+    public String winnerIs(){
+        int total = 0;
+        String winner = "";
+        for (Player player : players){
+           if (player.getScore() > total){
+               total = player.getScore();
+               winner = player.getName();
+            }
+        }
+            return "the winner is " + winner + " with a score of " + String.valueOf(total) +"!" ;
+
+
+
+        }
+
+
+        public String winners(){
+            for (Player player : players){
+                return player.name() + "'"
+                }
+
+        }
+    }
+
+

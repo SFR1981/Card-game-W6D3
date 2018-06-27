@@ -48,7 +48,12 @@ public class GameTest {
         game.addPLayer(player1);
         game.addPLayer(player2);
         game.dealRound();
+        game.dealRound();
+        System.out.println(player1.getScore());
+        System.out.println(player2.getScore());
+        System.out.println(game.winnerIs());
 
     }
+
 }
 
