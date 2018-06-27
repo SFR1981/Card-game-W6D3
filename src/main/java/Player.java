@@ -14,7 +14,7 @@ public class Player {
     }
 
     public int getScore(){
-        return hand.score();
+        return this.hand.score();
     }
 
     public void getDealt(Card card){
